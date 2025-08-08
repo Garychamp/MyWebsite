@@ -12,58 +12,36 @@
   z-index: -1;
 }
 
-header {
-    display: flex;
+.overlay {display: flex;
     flex-direction: row;
-    align-items: center;
-    width: auto;
-    height: 60px;
-    justify-content: center;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    height: 120px;
     justify-content: flex-end;
     align-items: center;
-    border-radius: 15px;
-    padding: 15px 30px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-}
-
-.glass-right-nav {
-    display: flex;
-    width: 800px;
-    height: 90px;
-    flex-direction: row;
-    background-color: #00ff00;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 25px;
-    border-radius: 15px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 15px 15px;
-    backdrop-filter: blur(15px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
-    border-radius: 15px;
+    width: auto%;
+    height: 150px;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 80%;
+    justify-content: space-evenly; /* <-- change this line */
+    align-items: center;           /* <-- change this line */
+    width: 500px;
+    margin-right: 50px;
+    height: 80px;
     border-radius: 15px;
+    color: white;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.link {
-    list-style: none;
+li {display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     color: white;
-    font-size: 40px;
-    text-decoration: none;
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 
@@ -77,24 +55,27 @@ main {height: 690px;
 
 footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
     color: white;
-    width: 250px;
-    height: 50px;
+    width: 100px;
+    height: 90px;
     justify-content: center;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 15px 15px;
     backdrop-filter: blur(15px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     margin-left: auto;
     margin-right: auto;
 }
 
-.footertext {
-    font-size: 13px;
+.socialicon {
+    font-size: 50px;
     text-align: center;
     color: white;
     margin: 0;
+    padding-top: 12px;
+}
+
+.socialicon:hover {
+    color: gray;
 }
