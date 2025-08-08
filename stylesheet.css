@@ -16,24 +16,18 @@ header {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: orange;
-    color: black;
     width: auto;
     height: 60px;
     justify-content: center;
-    outline: red solid 2px;
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    background-color: #0000ff;
-    outline: red solid 2px;
     width: auto;
     height: 120px;
     justify-content: flex-end;
     align-items: center;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 15px 30px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -41,31 +35,40 @@ nav {
 
 .glass-right-nav {
     display: flex;
-    width: 50%;
+    width: 800px;
     height: 90px;
     flex-direction: row;
     background-color: #00ff00;
-    outline: red solid 2px;
     justify-content: space-evenly;
     align-items: center;
     font-size: 25px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 15px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
 }
 
 ul {
     display: flex;
     flex-direction: row;
-    outline: red solid 2px;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     width: 80%;
+    border-radius: 15px;
+}
+
+.link {
+    list-style: none;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
 }
 
 
-main {outline: 3px solid red;
-    background-color: pink;
-    height: 690px;
+main {height: 690px;
     color: white;
-    background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 15px 30px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
@@ -80,7 +83,6 @@ footer {
     width: 250px;
     height: 50px;
     justify-content: center;
-    outline: red solid 2px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 15px 15px;
@@ -88,4 +90,11 @@ footer {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     margin-left: auto;
     margin-right: auto;
+}
+
+.footertext {
+    font-size: 13px;
+    text-align: center;
+    color: white;
+    margin: 0;
 }
